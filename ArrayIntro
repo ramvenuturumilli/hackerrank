@@ -1,0 +1,28 @@
+// first line of the input contains ,where  is the number of integers.The next line contains  integers separated by a space.
+//Constraints
+//where  is the  integer in the array.
+//Output Format
+//Print the  integers of the array in the reverse order in a single line separated by a space.
+//CODE
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+#define MAX 10000
+
+int main() {
+    int arr[MAX],size,i;
+    scanf("%d",&size);
+    for(i=0;i<size;i++)
+        {
+        scanf("%d",&arr[i]);
+    }
+    for(i=size-1;i>=0;i--)
+        {
+        printf("%d ",arr[i]);
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
